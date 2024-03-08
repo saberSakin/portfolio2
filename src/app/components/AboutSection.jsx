@@ -80,6 +80,7 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
        <li>Student, working on different projects: web development, machine learning and electronics.</li>
+       <li>Also working reserch and publishing papers.</li>
       </ul>
     ),
   },
@@ -124,7 +125,7 @@ const AboutSection = () => {
               active={tab === "research"}
             >
               {" "}
-              Research Field{" "}
+              Research{" "}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("experience")}

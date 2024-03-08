@@ -5,6 +5,17 @@ import LinkedinIcon from "../../../public/linkedin-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
 
+import {
+  RiFacebookLine,
+  RiGithubLine,
+  RiLinkedinLine,
+  RiInstagramLine,
+} from "react-icons/ri";
+
+
+import { IoMailOutline } from "react-icons/io5";
+
+
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
 
@@ -55,14 +66,7 @@ const EmailSection = () => {
           open. Whether you have a question or just want to say hi, I&apos;ll
           try my best to get back to you!
         </p>
-        <div className="socials flex flex-row gap-2">
-          <Link href="github.com">
-            <Image src={GithubIcon} alt="Github Icon" />
-          </Link>
-          <Link href="linkedin.com">
-            <Image src={LinkedinIcon} alt="Linkedin Icon" />
-          </Link>
-        </div>
+
       </div>
       <div>
         {emailSubmitted ? (
@@ -84,7 +88,7 @@ const EmailSection = () => {
                 id="email"
                 required
                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="jacob@google.com"
+                placeholder="example@mail.com"
               />
             </div>
             <div className="mb-6">
